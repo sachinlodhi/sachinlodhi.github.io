@@ -4,8 +4,13 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/', // For GitHub Pages deployment
+  base: '/',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: false,
+  },
   server: {
-    allowedHosts: ['localhost']
+    allowedHosts: ['localhost', '.lhr.life']
   }
 })
