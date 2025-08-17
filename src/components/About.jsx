@@ -10,29 +10,29 @@ const About = () => {
   });
 
   const stats = [
-    { icon: <FaFileAlt />, value: "9", label: "Papers Published", color: "text-purple-400" },
+    { icon: <FaFileAlt />, value: "9", label: "Research Papers", color: "text-purple-400" },
     { icon: <FaBrain />, value: "31", label: "Citations", color: "text-cyan-400" },
     { icon: <FaGraduationCap />, value: "3.83", label: "Graduate GPA", color: "text-green-400" },
-    { icon: <FaCode />, value: "40+", label: "AI Projects", color: "text-pink-400" }
+    { icon: <FaCode />, value: "50+", label: "DS/ML/CV Projects", color: "text-pink-400" }
   ];
 
   const highlights = [
     {
       icon: <FaBrain />,
-      title: "AI Research Excellence",
-      description: "9 published papers with 31 citations in machine learning, computer vision, and healthcare AI",
+      title: "Data Science & ML Research",
+      description: "9 published papers in machine learning, computer vision, and healthcare AI with 31 citations across top-tier conferences and journals",
       color: "from-purple-500 to-pink-500"
     },
     {
       icon: <FaHeart />,
-      title: "Healthcare AI Impact",
-      description: "Building HIPAA-compliant AI systems for patient rehabilitation and medical data analysis",
+      title: "Healthcare AI Solutions",
+      description: "Building HIPAA-compliant AI systems for patient rehabilitation, medical imaging analysis, and clinical decision support",
       color: "from-cyan-500 to-blue-500"
     },
     {
       icon: <FaRocket />,
-      title: "Production Deployment",
-      description: "Deployed AI solutions in regulated industries including healthcare and emergency response",
+      title: "End-to-End AI Development",
+      description: "Full-stack AI pipeline development from data preprocessing to production deployment in regulated industries",
       color: "from-green-500 to-teal-500"
     }
   ];
@@ -69,7 +69,7 @@ const About = () => {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              Full-Stack AI Developer & Researcher passionate about transforming healthcare through intelligent systems
+              Full-Stack AI Developer & Data Science Researcher specializing in ML, Computer Vision, and Healthcare AI
             </motion.p>
           </div>
           
@@ -89,25 +89,29 @@ const About = () => {
                   transition={{ duration: 0.6, delay: 0.5 }}
                 >
                   <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                    Seasoned <span className="text-purple-400 font-semibold">Full-Stack AI Developer</span> and 
-                    <span className="text-cyan-400 font-semibold"> Machine Learning Engineer</span> with 3+ years of experience 
-                    building production AI systems. Currently pursuing MS Computer Science at Cal State Fullerton 
+                    Experienced <span className="text-purple-400 font-semibold">Full-Stack AI Developer</span> and 
+                    <span className="text-cyan-400 font-semibold"> Data Science Researcher</span> with 3+ years of experience 
+                    building production AI systems across multiple domains. Currently pursuing MS Computer Science at Cal State Fullerton 
                     with a <span className="text-green-400 font-semibold">3.83 GPA</span> (First Class Distinction, expected 2025).
                   </p>
                   
                   <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                    My expertise spans <span className="text-purple-400 font-semibold">artificial intelligence</span>, 
-                    <span className="text-cyan-400 font-semibold"> deep learning</span>, and 
-                    <span className="text-pink-400 font-semibold"> computer vision</span>, developed through diverse 
-                    research projects and industry collaborations. I excel in predictive modeling, image analysis, 
-                    and developing innovative AI solutions for complex real-world challenges.
+                    My expertise spans the full spectrum of <span className="text-purple-400 font-semibold">Data Science</span>, 
+                    <span className="text-cyan-400 font-semibold"> Machine Learning</span>, 
+                    <span className="text-pink-400 font-semibold"> Computer Vision</span>, and 
+                    <span className="text-yellow-400 font-semibold"> Deep Learning</span>. I specialize in end-to-end 
+                    AI pipeline development, from data preprocessing and feature engineering to model deployment and monitoring 
+                    in production environments.
                   </p>
                   
                   <p className="text-lg text-gray-300 leading-relaxed">
-                    My research portfolio includes <span className="text-green-400 font-semibold">9 published papers</span> 
-                    with <span className="text-yellow-400 font-semibold">31 citations</span>, plus production deployments 
-                    in regulated industries including <span className="text-purple-400 font-semibold">healthcare</span>, 
-                    emergency response, and autonomous systems.
+                    Portfolio includes <span className="text-green-400 font-semibold">9 published research papers</span> 
+                    with <span className="text-yellow-400 font-semibold">31 citations</span>, covering domains like 
+                    <span className="text-purple-400 font-semibold"> healthcare AI</span>, 
+                    <span className="text-cyan-400 font-semibold"> medical imaging</span>, 
+                    <span className="text-pink-400 font-semibold"> educational technology</span>, and 
+                    <span className="text-green-400 font-semibold"> autonomous systems</span>. Proven track record in 
+                    HIPAA-compliant deployments and regulatory-grade AI solutions.
                   </p>
                 </motion.div>
               </div>
@@ -179,7 +183,7 @@ const About = () => {
             className="text-center mt-12"
           >
             <p className="text-gray-400 mb-6">
-              Passionate about using AI to solve real-world problems and make a positive impact
+              Passionate about leveraging Data Science, ML, and Computer Vision to solve complex real-world problems
             </p>
             <motion.button
               onClick={() => document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' })}
