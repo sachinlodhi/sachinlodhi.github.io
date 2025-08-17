@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-white overflow-x-hidden;
+    background: linear-gradient(to bottom, #000000, #0a0a0a);
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent;
+  }
+  
+  .glow {
+    filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.5));
+  }
+  
+  .glass {
+    background: rgba(15, 15, 15, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20;
+  }
+}
